@@ -1,0 +1,31 @@
+---
+const currentPath = new URL(Astro.request.url).pathname.replaceAll('/', '');
+
+// export interface Props {
+// 	current: string;
+// }
+
+// const { current } = Astro.props;
+---
+
+<nav>
+	<a href="/">Anasayfa</a>
+	<a href="/urunler/">Ürünler</a>
+	<a href="/hakkinda/">Hakkında</a>
+	<a href="/iletisim/">İletişim</a>
+</nav>
+
+<style lang="scss">
+	nav {
+		background-color: var(--primary);
+		padding: 1.5em 2em;
+		display: flex;
+		gap: 2em;
+		text-transform: uppercase;
+		font-size: 0.9em;
+
+		a {
+			color: white;
+		}
+	}
+</style>
