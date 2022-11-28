@@ -10,9 +10,9 @@ const currentPath = new URL(Astro.request.url).pathname.replaceAll('/', '');
 
 <nav>
 	<a href="/">Anasayfa</a>
-	<a href="/urunler/">Ürünler</a>
-	<a href="/hakkinda/">Hakkında</a>
-	<a href="/iletisim/">İletişim</a>
+	<a href="/urunler/" class={currentPath == "urunler" ? "active" : ""}>Ürünler</a>
+	<a href="/hakkinda/" class={currentPath == "hakkinda" ? "active" : ""}>Hakkında</a>
+	<a href="/iletisim/" class={currentPath == "iletisim" ? "active" : ""}>İletişim</a>
 </nav>
 
 <style lang="scss">
@@ -26,6 +26,10 @@ const currentPath = new URL(Astro.request.url).pathname.replaceAll('/', '');
 
 		a {
 			color: white;
+
+			&.active {
+				text-decoration: underline;
+			}
 		}
 	}
 </style>

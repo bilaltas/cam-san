@@ -1,25 +1,23 @@
 ---
-// export interface Props {
-// 	title: string;
-// 	body: string;
-// 	href: string;
-// }
+export interface Props {
+	currentPage?: boolean;
+}
 
-// const { href, title, body } = Astro.props;
+const { currentPage = false } = Astro.props;
 ---
 
 <aside>
-	<h3>İletişim Bilgileri</h3>
+	{currentPage ? <h1>İletişim Bilgileri</h1> : <h3>İletişim Bilgileri</h3>}
 	<p>Mehmet ARSANACI</p>
 
-	<h4>Adres:</h4>
+	{currentPage ? <h2>Adres:</h2> : <h4>Adres:</h4>}
 	<p>Çepni Mahallesi, Sandıkçılar İçi, No: 3 <br>
 		Merkez/Çorum</p>
 
-	<h4>Telefon:</h4>
-	<p><a href="tel: 0533 591 0251">0533 591 0251</a></p>
+	{currentPage ? <h2>Telefon:</h2> : <h4>Telefon:</h4>}
+	<p><a href="tel:+905335910251" title="CAM-SAN'ı Ara">0533 591 0251</a></p>
 
-	<h4>Çalışma Saatleri:</h4>
+	{currentPage ? <h2>Çalışma Saatleri:</h2> : <h4>Çalışma Saatleri:</h4>}
 	<p>Pazartesi - Cumartesi <br>
 		08:00 - 18:30 arası</p>
 </aside>
@@ -35,7 +33,7 @@
 		-ms-word-wrap: break-word;
 		word-wrap: break-word;
 
-		h4 {
+		h4, h2 {
 			margin-bottom: 0;
 		}
 

@@ -7,12 +7,11 @@ import Iletisim from "../components/Iletisim.astro";
 	<main>
 		<div class="content">
 			<h1>Ürünler</h1>
-			<p>
-				Tüm ürünlerimizi <a
-					href="https://www.facebook.com/profile.php?id=100024079454524"
-					target="_blank">Facebook</a
-				> sayfamızdan görebilirsiniz.
-			</p>
+			<p>Tüm ürünlerimizi <a href="https://www.facebook.com/profile.php?id=100024079454524" target="_blank" title="CAM-SAN Facebook Sayfası">Facebook</a> sayfamızdan görebilirsiniz.</p>
+
+			<a href="https://www.facebook.com/profile.php?id=100024079454524" target="_blank">
+				<img src="/images/cam-san-urunler-yeni.jpg" alt="Daha fazla ürün görmek için tıklayın">
+			</a>
 		</div>
 
 		<Iletisim />
@@ -23,5 +22,6 @@ import Iletisim from "../components/Iletisim.astro";
 	main {
 		display: flex;
 		justify-content: space-between;
+		gap: 1.5em;
 	}
 </style>

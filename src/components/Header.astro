@@ -3,12 +3,30 @@ import Navigation from "./Navigation.astro";
 ---
 
 <header>
-	<a href="/"><img src="/images/camsan-logo.png" alt=""></a>
+	<a href="/" title="Anasayfaya Git"><img src="/images/cam-san-logo.png" width="350" height="80" alt="CAM-SAN Logo" /></a>
+	<div class="contact">
+		<a href="tel:+905335910251" title="CAM-SAN'ı Ara"><b>0533 591 0251</b></a>
+		<br />
+		<span>
+			<b>Pazartesi - Cumartesi</b> <br />
+			08:00 - 18:30 arası
+		</span>
+	</div>
 </header>
 <Navigation />
 
 <style lang="scss">
 	header {
 		padding: 3em 2.7em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.contact {
+			text-align: center;
+			a {
+				font-size: 2em;
+			}
+		}
 	}
 </style>

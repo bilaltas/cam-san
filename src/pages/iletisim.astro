@@ -3,9 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import Iletisim from "../components/Iletisim.astro";
 ---
 
-<Layout title="İletişim | CAM-SAN Ticaret" image="/images/cam-san-ic.jpg">
+<Layout title="İletişim | CAM-SAN Ticaret" image="/images/cam-san-dis-banner.jpg">
 	<main>
-		<Iletisim />
+		<Iletisim currentPage />
+
+		<img src="/images/cam-san-dis-yeni.jpg" width="500" alt="CAM-SAN Dükkan Dışarıdan Fotoğraf">
+
 	</main>
 </Layout>
 
@@ -13,6 +16,7 @@ import Iletisim from "../components/Iletisim.astro";
 	main {
 		display: flex;
 		justify-content: center;
+		gap: 1.5em;
 
 		aside {
 			width: 100%;
