@@ -18,14 +18,14 @@ const currentPath = new URL(Astro.request.url).pathname.replaceAll('/', '');
 <style lang="scss">
 	nav {
 		background-color: var(--primary);
-		padding: 1.5em 2em;
+		padding: 1.5em 2.5em;
 		display: flex;
 		gap: 2em;
 		text-transform: uppercase;
-		font-size: 0.9em;
 
 		a {
 			color: white;
+			font-size: 0.9em;
 
 			&.active {
 				text-decoration: underline;

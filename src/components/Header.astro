@@ -5,7 +5,7 @@ import Navigation from "./Navigation.astro";
 <header>
 	<a href="/" title="Anasayfaya Git"><img src="/images/cam-san-logo.png" width="350" height="80" alt="CAM-SAN Logo" /></a>
 	<div class="contact">
-		<a href="tel:+905335910251" title="CAM-SAN'ı Ara"><b>0533 591 0251</b></a>
+		<a href="tel:+905335910251" title="CAM-SAN'ı Ara" class="phone"><b>0533 591 0251</b></a>
 		<br />
 		<span>
 			<b>Pazartesi - Cumartesi</b> <br />
@@ -17,14 +17,14 @@ import Navigation from "./Navigation.astro";
 
 <style lang="scss">
 	header {
-		padding: 3em 2.7em;
+		padding: 2em;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
 		.contact {
 			text-align: center;
-			a {
+			a.phone {
 				font-size: 2em;
 			}
 		}
