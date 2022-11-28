@@ -10,7 +10,7 @@ import Iletisim from "../components/Iletisim.astro";
 			<p>Tüm ürünlerimizi <a href="https://www.facebook.com/profile.php?id=100024079454524" target="_blank" title="CAM-SAN Facebook Sayfası">Facebook</a> sayfamızdan görebilirsiniz.</p>
 
 			<a href="https://www.facebook.com/profile.php?id=100024079454524" target="_blank">
-				<img src="/images/cam-san-urunler-yeni.jpg" alt="Daha fazla ürün görmek için tıklayın">
+				<img src="/images/cam-san-urunler-yeni.jpg" width="700" height="702" alt="Daha fazla ürün görmek için tıklayın">
 			</a>
 		</div>
 
@@ -23,5 +23,11 @@ import Iletisim from "../components/Iletisim.astro";
 		display: flex;
 		justify-content: space-between;
 		gap: 1.5em;
+		flex-wrap: wrap;
+
+		.content {
+			flex: 1;
+			min-width: 160px;
+		}
 	}
 </style>

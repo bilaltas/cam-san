@@ -5,7 +5,12 @@ import Layout from "../layouts/Layout.astro";
 <Layout
 	title="CAM-SAN Ticaret | Cam, Ayna, Resim, Çerçeve, Tuval ve Ağaç İşleri"
 >
-	<img src="/images/cam-san-ic.jpg" width="1140" height="400" alt="CAM-SAN Dükkan İçi" />
+	<img
+		src="/images/cam-san-ic.jpg"
+		width="1140"
+		height="400"
+		alt="CAM-SAN Dükkan İçi"
+	/>
 	<main>
 		<div class="welcome-box">
 			<h1>CAM-SAN Ticaret Web Sitesine Hoşgeldiniz</h1>
@@ -46,21 +51,30 @@ import Layout from "../layouts/Layout.astro";
 	.welcome-box {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 1.5em;
 		padding: 1.5em;
 		margin-bottom: 1.5em;
 		background: #f5f5f5;
 		box-shadow: inset 0 0 3em #e2e2e2;
 		border: 1px solid #ddd;
 		color: var(--secondary);
+
+		h1 {
+			margin: 0;
+		}
 	}
 
 	.features {
-		display: grid;
-		grid-auto-columns: minmax(0, 1fr);
-		grid-auto-flow: column;
+		// display: grid;
+		// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		display: flex;
+  		flex-flow: row;
+		flex-wrap: wrap;
 		gap: 1.5em;
 
 		& > .feature {
+			flex: 1;
 			box-shadow: 0 0 5px #ddd;
 			border: 1px solid #ddd;
 			padding: 1.5em;
